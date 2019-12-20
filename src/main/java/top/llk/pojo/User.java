@@ -9,6 +9,22 @@ package top.llk.pojo;
 public class User {
     private String name;
     private int num;
+    private String gender;
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public User(String name, int num, String gender) {
+
+        this.name = name;
+        this.num = num;
+        this.gender = gender;
+    }
 
     public User() {
     }
