@@ -1,54 +1,20 @@
 package top.llk.pojo;
 
+import lombok.Data;
+
 /**
  * @Version 1.0
  * @Author: Lin Liangkun
  * @Date: 2019/12/20
  * @Content:
  */
+
+@Data
 public class User {
+    private Integer uid;
     private String name;
-    private int num;
+    private Integer age;
     private String gender;
 
-    public String getGender() {
-        return gender;
-    }
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public User(String name, int num, String gender) {
-
-        this.name = name;
-        this.num = num;
-        this.gender = gender;
-    }
-
-    public User() {
-    }
-
-    public String getName() {
-
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
-
-    public User(String name, int num) {
-
-        this.name = name;
-        this.num = num;
-    }
 }
